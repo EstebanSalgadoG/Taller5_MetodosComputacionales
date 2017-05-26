@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{Computational Methods}
+\author{Esteban Salgado
+201225345}
+
+\maketitle
+
+\section{Results}
+\subsection{Ionic channels}
+The ion channel forming peptide gramicidin A adopts a number of distinct conformations in different environments. The channels specifically conduct monovalent cations (alkali metals, $T1^+, Ag^+, NH^+_4$ and $H^+$). Reports of the atomic structures of gramicidin conformers have included values for the pore/channel radius or diameter. These generally have been based on interatomic distances across the channel, sometimes with the van der Waals radius of the atoms subtracted. 
+\\According to the dataset provided in class, we were able to determine the higher size of the ionic channel without making contact with any other particles.
+The results are shown in the following diagram.
+
+\begin{figure}[h!]
+   \centering
+    \includegraphics[width=3.0in]{ej1.jpg}
+    \caption{Results using the $Canal_ionico.txt$ dataset}
+    \label{simulationfigure}
+\end{figure}
+
+\begin{figure}
+   \centering
+    \includegraphics[width=3.0in]{hist1.jpg}
+    \caption{Histogram of the $x,y$ positions}
+    \label{histogram}
+\end{figure}
+
+\subsection{RC Circuit}
+An RC circuit is composed of a resistor R, and a capacitance capacitor C connected in series. If the capacitor is initially discharged and the circuit is closed, the capacitor starts to accumulate charge and The equation describing the charge as a function of time is:
+
+\begin{figure}[h!]
+   \centering
+$q(t)=Q_{max}\cdot(1-e^{(-t/RC)})$
+\end{figure}
+
+Where $Q_{max}$ is the maximum charge reached by the capacitor, C is the capacitance of the capacitor and R is the resistance of the circuit. In an RC circuit there is also a relation between the capacitance C, the voltage V and the maximum charge $Q_{max}$ of the capacitor: $Q_{max} = V_0 \cdot C$. For this exercise, we assume that the potential is $V_0 = 10V$.
+
+\begin{figure}[h!]
+   \centering
+    \includegraphics[width=3.0in]{RvsLikelihood.jpg}
+    \caption{Histogram R values vs Likelihood.}
+    \label{histogram2}
+\end{figure}
+
+\begin{figure}[h!]
+   \centering
+    \includegraphics[width=3.0in]{CvsLikelihood.jpg}
+    \caption{Histogram C values vs Likelihood.}
+    \label{histogram3}
+\end{figure}
+
+\begin{figure}[h!]
+   \centering
+    \includegraphics[width=3.0in]{model.jpg}
+    \caption{Model for the best values of R,C.}
+    \label{model}
+\end{figure}
+
+\end{document}
